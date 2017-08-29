@@ -1,50 +1,349 @@
-.popular-product-header h2,
-.popular-brand-header h2 {
-  font-size: 30px;
-  line-height: 30px;
-  color: #3d546e;
-  font-weight: normal;
-  font-family: "Cuprum", "Arial", sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
-.popular-product-item h3,
-.product-item h3 {
-  font-size: 20px;
-  line-height: 20px;
-  color: #000000;
-  font-weight: bold;
-  font-family: "PT Sans", "Arial", sans-serif;
+a {
+  text-decoration: none; 
 }
 
-.service-header h2 {
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-  font-weight: normal;
-  font-family: "Cuprum", "Arial", sans-serif;
-}
+
+.button {
+  font: inherit;
   
-.sorting h2 {
-  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  
+  background-color: #ee3643;
+}
+
+.button:hover {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+
+.sales-button {
+  background-color: #63a63e;
+}
+
+.sales-button:hover {
+  background-color: #5fbb2d;
+}
+
+.sales-button:active {
+  background-color: #518534;
+}
+
+.marker-button {
+  font: inherit;
+  
+  background-color: #ffffff;
+  border: 3px solid #63a63e;
+  color: #32425c
+}
+
+.marker-button:hover {
+  background-color: #ffffff;
+  border: 3px solid #32425c;
+}
+
+.marker-button:active {
+  border: 3px solid rgba(50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
+}
+
+
+.services-product-button {
+  font: inherit;
+  
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.services-product-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.services-product-button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* кнопки */
+
+/* фоны */
+.main-header {
+  background-color: #f3f7f9;
+}
+
+.main-header-top {
+  background-color: #33445a;
+}
+
+.main-header-top a {
+  color: #ffffff;
+}
+/* фоны */
+
+
+
+.main-header-top a:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-header .container p:nth-child(1) {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  
+  color: #ff5357;
+}
+
+.main-header .container p:nth-child(2) a {
+  font-size: 21px;
   line-height: 18px;
+  
+  color: #fb463c;
+}
+
+.main-header .container p:nth-child(3) {
+  font-size: 14px;
+  line-height: 24px;
+  
+  color: #3d546e;
+}
+
+.login-and-registry-list,
+.main-navigation-list {
+  list-style: none;
+}
+
+.login-and-registry-list a {
+  font-size: 21px;
+  
   color: #000000;
-  font-weight: normal;
-  font-family: "PT Sans", "Arial", sans-serif;
 }
 
-.filters h2 {
-  font-size: 13px;
-  line-height: 18px;
-  color: 000000;
-  font-weight: normal;
-  font-family: "PT Sans", "Arial", sans-serif;
+.login-and-registry-list a:hover {
+  color: #ee3643;
 }
 
-h1.page-title {
+.login-and-registry-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation {
+  background-color: #32425c;
+}
+
+.main-navigation-list a {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.main-navigation-list a:hover {
+  background-color: #293449;
+}
+
+.main-navigation-list a:active {
+  background-color: #293449;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.services-product-list {
+  list-style: none;
+}
+
+
+
+.services-product-list li:nth-child(1) {
+  background-color: #ffbf47;
+}
+
+.services-product-list li:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.services-product-list li:nth-child(3) {
+  background-color: #dc91d8;
+}
+
+.services-product-list li:nth-child(4) p {
+  text-transform: uppercase;
+}
+
+.services-product-list li:nth-child(4) a {
+  font-size: 17px;
+  text-transform: uppercase;
+  
+  background-color: #ff5357;
+}
+
+
+.services-product-list li:nth-child(5) {
+  background-color: #8ed78f;
+}
+
+.services-product-list li:nth-child(6) {
+  background-color: #ffc047;
+}
+
+.popular-product-header,
+.popular-brand-header {
+  background-color: #f9f5f0;
+}
+
+.popular-product-header h2,
+.popular-brand-header h2{
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  
   color: #3d546e;
-  font-weight: normal;
-  font-family: "Cuprum", "Arial", sans-serif;
 }
 
+.popular-product-header a {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+  
+  background-color: #ff5357;
+}
+
+
+.popular-brand-header-list {
+  list-style: none;
+}
+
+.popular-product-item,
+.popular-brand-header-list li {
+  border: 1px solid #eaeaea;
+}
+
+.popular-product-item:hover,
+.popular-brand-header-list li:hover {
+  box-shadow: 0px 10px 25px 0 rgba(29, 34, 49, 0.5);
+}
+
+.popular-brand-header-list li:active {
+  opacity: 0.3;
+}
+
+.popular-product-item h3 {
+  font-family: "PT Sans", Arial sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  
+  color: #000000;
+}
+
+.old-val {
+  font-family: "PT Sans", Arial sans-serif;
+  font-weight: 700;
+  
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.val {  
+  font-family: "PT Sans", Arial sans-serif;
+  font-weight: 700;
+  
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.service {
+  background-color: #f4f8fa;
+}
+
+.service-header h2,
+.about-company h2,
+.contact h2 {
+  font-size: 30px;
+  line-height: 24px;
+  text-transform: uppercase;
+  
+  color: #000000;
+}
+
+.service-header p {
+  font-family: "PT Sans", Arial sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  
+  color: #000000;
+}
+
+.delivery h2,
+.guarantee h2,
+.credit h2 {
+  font-size: 36px;
+  line-height: 24px;
+  text-transform: uppercase;
+  
+  color: #3d546e;
+}
+
+.delivery p,
+.guarantee p,
+.credit p,
+.about-company p,
+.contact p {
+  font-family: "PT Sans", Arial sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  
+  color: #000000;
+}
+
+.delivery-brand {
+  list-style: none;
+  
+  font-size: 18px;
+  line-height: 20px;
+  
+  color: #000000;
+}
+
+
+.main-footer {
+  background-color: #3d546e;
+}
+
+.main-footer-bottom {
+  background-color: #33445b;
+}
+
+.site-navigation,
+.site-navigation-2,
+.footer-social {
+  list-style: none;
+}
+
+.site-navigation a,
+.footer-social a,
+.developed a {
+  color: #f3f7f9;
+}
+
+.site-navigation-2 a,
+.developed {
+  color: #ffda96;
+}
