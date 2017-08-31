@@ -1,3 +1,6 @@
+/* ----- Базовые стили ----- */
+/*
+
 body {
   margin: 0;
   padding: 0;
@@ -80,9 +83,7 @@ a {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* кнопки */
 
-/* фоны */
 .main-header {
   background-color: #f3f7f9;
 }
@@ -94,7 +95,7 @@ a {
 .main-header-top a {
   color: #ffffff;
 }
-/* фоны */
+
 
 
 
@@ -167,30 +168,30 @@ a {
 
 
 
-.services-product-item-material {
+.material {
   background-color: #ffbf47;
 }
 
-.services-product-item-tool {
+.tool {
   background-color: #3bbce3;
 }
 
-.services-product-item-technology {
+.technology {
   background-color: #dc91d8;
 }
 
-.services-product-item-punchers p {
+.punchers p {
   text-transform: uppercase;
 }
 
-.services-product-item-punchers a {
+.punchers a {
   font-size: 17px;
   text-transform: uppercase;
   
   background-color: #ff5357;
 }
 
-.services-product-item-punchers span {
+.punchers span {
   font-family: "PT Sans", Arial sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -200,11 +201,11 @@ a {
 }
 
 
-.services-product-item-discounts {
+.discounts {
   background-color: #8ed78f;
 }
 
-.services-product-item-delivery {
+.delivery-services {
   background-color: #ffc047;
 }
 
@@ -443,7 +444,7 @@ a {
   text-decoration: underline;
   
   color: #000000;
-  opacity: 1
+  opacity: 1;
 }
 
 .sorting-list a:active {
@@ -572,4 +573,28 @@ a {
   text-transform: uppercase;
   
   background-color: #ffffff;
+}
+*/
+/* ----- Базовые стили ----- */
+
+
+/* ----- Сеточные стили ----- */
+
+body {
+  /* Временно для сетки */
+
+  background-image: url("/img/technomart-index.jpg");
+  background-size: 1200px auto;
+  background-repeat: no-repeat;
+}
+
+.main-header {
+ /* Временно для сетки */
+  min-height: 320px;
+  outline: 2px solid green;
+
+}
+
+.main-header-top {
+  
 }
