@@ -411,7 +411,7 @@
     
     <header class="main-header">
       <div class="main-header-top">
-        <div class="container">
+        <div class="container main-header-top-flex">
           <a class="main-header-logo"></a>
           <form class="search"></form>
           <a class="marker-header"></a>
@@ -419,10 +419,13 @@
           <a class="button sales-button"></a>
         </div>
       </div>
-      <div class="container">
+    
+      <div class="container main-header-bottom-flex">
         <p class="description-header"></p>
-        <p class="phone-header"></p>
-        <p class="address-header"></p>
+        <div class="phone-address">
+          <p class="phone-header"></p>
+          <p class="address-header"></p>
+        </div>  
         <ul class="login-and-registry-list">
           <li class="login-and-registry-item"></li>
           <li class="login-and-registry-item"></li>
@@ -453,10 +456,10 @@
             <li class="services-product-item delivery-services"></li>
           </ul>
         </section>
-    
+
         <section class="popular-product">
           <header class="popular-product-header">
-            <h2 class="popular-product-item"></h2>
+            <!--<h2 class="popular-product-item"></h2>потом переопределю класс что бы не конфликтовал-->
             <a class="button popular-product-all"></a>
           </header>
           <section class="product-list">
@@ -469,7 +472,7 @@
         
         <section class="popular-brand">
           <header class="popular-brand-header">
-            <h2 class="popular-brand-header-item"></h2>
+            <!--<h2 class="popular-brand-header-item"></h2> потом переопределю класс что бы не конфликтовал-->
             <a class="button all-product"></a>
           </header>
           <ul class="popular-brand-header-list">
@@ -484,25 +487,25 @@
           </ul>
         </section>
       </div>
-      
+         
       <section class="service">
-        <div class="container">
+        <div class="container service-flex">
           <header class="service-header service-info"></header>
-          <div class="toggle"></div>
           <section class="delivery service-descr"></section>
           <section class="guarantee service-descr"></section>
           <section class="credit service-descr"></section>
         </div>
       </section>
-      
+        
       <div class="description container">
         <section class="about-company service-info"></section>  
         <section class="contact service-info"></section>
       </div>
     </main>
+  
     
     <footer class="main-footer">
-      <div class="container">
+      <div class="container flex-footer">
         <a class="main-header-logo"></a>
         <ul class="site-navigation">
           <li class="site-navigation-item"></li>
@@ -518,7 +521,7 @@
           <li class="site-navigation-2-item"></li>
           <li class="site-navigation-2-item"></li>
         </ul>
-      </div>
+      </div> 
       <div class="main-footer-bottom">
         <div class="container">
           <p class="copyrighted"></p>
@@ -532,5 +535,5 @@
         </div>
       </div>
     </footer>
-          
+           
  

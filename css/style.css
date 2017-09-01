@@ -583,18 +583,322 @@ a {
 body {
   /* Временно для сетки */
 
+  min-width: 1200px;
+  min-height: 3151px;
+
   background-image: url("/img/technomart-index.jpg");
   background-size: 1200px auto;
   background-repeat: no-repeat;
 }
 
-.main-header {
- /* Временно для сетки */
-  min-height: 320px;
-  outline: 2px solid green;
-
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  
+  /* Временно для сетки */
+  outline: 2px solid red;
 }
 
-.main-header-top {
+.main-header-top-flex {
+  display: flex;
+  margin-bottom: 46px;
+  
+  /* Временно для сетки */
+  min-height: 42px;
+}
+
+.main-header-logo {
+  width: 220px;
+  
+  /* Временно для сетки */
+  outline: 2px solid orange;
+}
+
+.search {
+  width: 270px;
+  
+  /* Временно для сетки */
+  outline: 2px solid orange;
+}
+
+.marker-header {
+  width: 150px;
+  
+  /* Временно для сетки */
+  outline: 2px solid orange;
+}
+
+.global-panel-basket {
+  width: 150px;
+  
+  /* Временно для сетки */
+  outline: 2px solid orange;
+}
+
+.sales-button {
+  width: 150px;
+  
+  /* Временно для сетки */
+  outline: 2px solid orange;
+}
+
+.main-header-bottom-flex {
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin-bottom: 120px;
+  
+  /* Временно для сетки */
+  min-height: 172px;
+}
+
+.description-header {
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  
+  width: 300px;
+  
+  /* Временно для сетки */
+  min-height: 76px;
+  outline: 2px solid orange;
+}
+
+
+.phone-address {
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+  
+  width: 300px;
+  
+  /* Временно для сетки */
+  min-height: 76px;
+  outline: 2px solid orange;
+}
+
+.login-and-registry-list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+  
+  width: 300px;
+  
+  /* Временно для сетки */
+  outline: 2px solid orange;
+}
+
+.main-navigation {  
+  width: 940px;
+  margin-top: 36px;
+  
+  /* Временно для сетки */
+  min-height: 60px; 
+  outline: 2px solid orange;
+}
+
+.main-navigation-list {
+  list-style: none;
+}
+
+.services-product-list {
+  margin: 0;
+  margin-bottom: 53px;
+  padding: 0;
+  
+  display: flex;
+  flex-wrap: wrap;
+  
+  width: 940px;
+  
+  list-style: none;
+  
+  /* Временно для сетки */
+  min-height: 409px; 
+  outline: 2px solid orange;
+}
+
+.material {
+  width: 300px;
+  margin-right: 20px;
+  
+  /* Временно для сетки */
+  min-height: 123px; 
+  outline: 2px solid orange;
+}
+
+.tool {
+  width: 300px;
+  margin-right: 20px;
+  
+  /* Временно для сетки */
+  min-height: 123px; 
+  outline: 2px solid orange;
+}
+
+.technology {
+  width: 300px;
+
+  /* Временно для сетки */
+  min-height: 123px; 
+  outline: 2px solid orange;
+}
+
+
+.punchers {
+  width: 620px;
+  margin-top: 20px;
+  margin-right: 20px;
+  
+  /* Временно для сетки */
+  min-height: 266px; 
+  outline: 2px solid orange;
+}
+
+
+.discounts {
+  width: 300px;
+  margin-top: 20px;
+
+  /* Временно для сетки */
+  min-height: 120px; 
+  outline: 2px solid black;
+}
+
+  /* Тут я не понял как сделать так, что бы он не переносился
+.delivery-services{
+  width: 300px;
+
+  min-height: 120px; 
+  outline: 2px solid black;
+}
+ */
+
+.popular-product-header {
+  display: flex;
+  
+  width: 940px;
+    
+  margin-bottom: 20px;
+  
+  /* Временно для сетки */
+  min-height: 89px; 
+  outline: 2px solid orange;
+}
+
+.product-list {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  
+  width: 940px;
+  
+  /* Временно для сетки */
+  min-height: 318px; 
+  outline: 2px solid orange;
+}
+
+.popular-product-item {
+  width: 220px;
+  
+  /* Временно для сетки */
+
+  outline: 2px solid orange;
+}
+
+.popular-brand-header {
+  display: flex;
+  
+  margin-bottom: 20px;
+  width: 940px;
+  
+  /* Временно для сетки */
+  min-height: 89px; 
+  outline: 2px solid orange;
   
 }
+
+.popular-brand-header-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  
+  
+  margin: 0;
+  padding: 0;
+  margin-bottom: 148px;
+  
+  list-style: none;
+  
+  width: 940px;
+  
+  /* Временно для сетки */
+  min-height: 310px; 
+  outline: 2px solid orange;
+}
+
+.popular-brand-header-item {
+  width: 220px;
+  
+  /* Временно для сетки */
+  min-height: 145px;
+  outline: 2px solid orange;
+}
+
+/* Вот тут я не понял как все располагать*/
+.service-flex {
+  display: flex;
+  flex-direction: column;
+  
+  margin-bottom: 180px;
+  
+  width: 940px;
+  
+  /* Временно для сетки */
+  min-height: 356px;
+  outline: 2px solid red;
+}
+
+.service-header {
+  width: 460px;
+  margin-bottom: 75px;
+  
+  /* Временно для сетки */
+  min-height: 100px;
+  outline: 2px solid orange;
+}
+/* Вот тут я не понял как все располагать*/
+
+.description {
+  display: flex;
+  margin-bottom: 86px;
+  
+  width: 940px;
+  
+  /* Временно для сетки */
+  min-height: 374px;
+  outline: 2px solid orange;
+}
+
+.about-company {
+  width: 540px;
+  margin-right: 20px;
+
+  /* Временно для сетки */
+  min-height: 374px;
+  outline: 2px solid orange;
+}
+
+.contact {
+  width: 380px;
+  
+  /* Временно для сетки */
+  min-height: 374px;
+  outline: 2px solid orange;
+}
+
+
+
