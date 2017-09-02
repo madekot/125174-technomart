@@ -583,11 +583,10 @@ a {
 body {
   /* Временно для сетки */
 
-  min-width: 1200px;
-  min-height: 3151px;
+  min-width: 960px;
 
   background-image: url("/img/technomart-index.jpg");
-  background-size: 1200px auto;
+  background-size: 960px auto;
   background-repeat: no-repeat;
 }
 
@@ -647,16 +646,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   
-  margin-bottom: 120px;
+  margin-bottom: 59px;
   
-  /* Временно для сетки */
-  min-height: 172px;
 }
 
 .description-header {
   margin: 0;
   margin-right: 20px;
-  padding: 0;
   
   width: 300px;
   
@@ -667,8 +663,6 @@ body {
 
 
 .phone-address {
-  margin: 0;
-  padding: 0;
   margin-right: 20px;
   
   width: 300px;
@@ -691,9 +685,11 @@ body {
 }
 
 .main-navigation {  
-  width: 940px;
+  width: 100%;
   margin-top: 36px;
   
+  
+  padding-bottom: 60px;
   /* Временно для сетки */
   min-height: 60px; 
   outline: 2px solid orange;
@@ -705,19 +701,20 @@ body {
 
 .services-product-list {
   margin: 0;
-  margin-bottom: 53px;
   padding: 0;
   
   display: flex;
   flex-wrap: wrap;
-  
-  width: 940px;
-  
+  align-items: flex-start;
   list-style: none;
   
   /* Временно для сетки */
   min-height: 409px; 
   outline: 2px solid orange;
+}
+
+.services-product {
+  margin-bottom: 53px;
 }
 
 .material {
@@ -764,22 +761,21 @@ body {
 
   /* Временно для сетки */
   min-height: 120px; 
-  outline: 2px solid black;
+  outline: 2px solid orange;
 }
 
-  /* Тут я не понял как сделать так, что бы он не переносился
 .delivery-services{
   width: 300px;
+  margin-top: -120px;
+  margin-left: auto;
 
   min-height: 120px; 
-  outline: 2px solid black;
+  outline: 2px solid orange;
 }
- */
+
 
 .popular-product-header {
   display: flex;
-  
-  width: 940px;
     
   margin-bottom: 20px;
   
@@ -793,10 +789,8 @@ body {
   margin-bottom: 20px;
   justify-content: space-between;
   
-  width: 940px;
-  
   /* Временно для сетки */
-  min-height: 318px; 
+   
   outline: 2px solid orange;
 }
 
@@ -804,15 +798,15 @@ body {
   width: 220px;
   
   /* Временно для сетки */
-
+  min-height: 318px;
   outline: 2px solid orange;
 }
 
 .popular-brand-header {
   display: flex;
+  flex-wrap: wrap;
   
   margin-bottom: 20px;
-  width: 940px;
   
   /* Временно для сетки */
   min-height: 89px; 
@@ -829,14 +823,13 @@ body {
   
   margin: 0;
   padding: 0;
-  margin-bottom: 148px;
+  margin-bottom: 85px;
   
   list-style: none;
   
-  width: 940px;
   
   /* Временно для сетки */
-  min-height: 310px; 
+/*  min-height: 310px; */
   outline: 2px solid orange;
 }
 
@@ -844,17 +837,21 @@ body {
   width: 220px;
   
   /* Временно для сетки */
-  min-height: 145px;
+  height: 145px;
   outline: 2px solid orange;
+
 }
 
-/* Вот тут я не понял как все располагать*/
+.popular-brand-header-list li:nth-child(n+5) {
+  margin-top: 20px;
+}
+
 .service-flex {
   display: flex;
   flex-direction: column;
   
-  margin-bottom: 180px;
-  
+  padding-top: 63px;
+    
   width: 940px;
   
   /* Временно для сетки */
@@ -870,16 +867,28 @@ body {
   min-height: 100px;
   outline: 2px solid orange;
 }
-/* Вот тут я не понял как все располагать*/
+
+
+.delivery {
+  width: 620px;
+  
+  margin-left: auto;
+  
+  /* Временно для сетки */
+  min-height: 288px;
+  outline: 2px solid orange;
+}
+
 
 .description {
   display: flex;
-  margin-bottom: 86px;
   
+  padding-top: 79px;
+  padding-bottom: 86px; 
   width: 940px;
   
   /* Временно для сетки */
-  min-height: 374px;
+  min-height: 368px;
   outline: 2px solid orange;
 }
 
@@ -888,7 +897,7 @@ body {
   margin-right: 20px;
 
   /* Временно для сетки */
-  min-height: 374px;
+
   outline: 2px solid orange;
 }
 
@@ -896,9 +905,99 @@ body {
   width: 380px;
   
   /* Временно для сетки */
-  min-height: 374px;
   outline: 2px solid orange;
 }
 
+.flex-footer {
+  display: flex;
+  flex-wrap: wrap;
+  
+  padding-bottom: 52px;
+}
 
+.main-header-logo-footer {
+  width: 220px;
+  
+  /* Временно для сетки */
+  min-height: 68px;
+  outline: 2px solid orange;
+}
 
+.site-navigation {
+  width: 560px;
+  
+  list-style: none;
+  
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  
+  /* Временно для сетки */
+  outline: 2px solid orange;
+}
+
+.contact-footer {
+  width: 380px;
+  
+  margin: 0;
+  margin-top: 30px;
+  
+  /* Временно для сетки */
+  min-height: 41px;
+  outline: 2px solid orange;
+}
+
+.site-navigation-2 {
+  width: 560px;
+  
+  list-style: none;
+  
+  margin: 0;
+  
+  padding: 0;
+  margin-top: 30px;
+  
+  /* Временно для сетки */
+  min-height: 41px;
+  outline: 2px solid orange;
+}
+
+.flex-footer-bottom {
+  display: flex;
+}
+
+.copyrighted {
+  width: 240px;
+  
+  margin: 0;
+  margin-right: 140px;
+  margin-top: 37px;
+  
+  /* Временно для сетки */
+  min-height: 36px;
+  outline: 2px solid orange;
+}
+
+.footer-social {
+  width: 160px;
+  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  margin-right: 81px;
+  margin-top: 34px;
+  
+  /* Временно для сетки */
+  outline: 2px solid orange;
+}
+
+.developed {
+  width: 160px;
+  
+  margin: 0;
+  margin-top: 34px;
+
+  /* Временно для сетки */
+  outline: 2px solid orange;
+}
