@@ -580,12 +580,12 @@ a {
 
 /* ----- Сеточные стили ----- */
 
-body {
+.main-body {
   /* Временно для сетки */
 
   min-width: 960px;
 
-  background-image: url("/img/technomart-index.jpg");
+  background-image: url("img/technomart-index.jpg");
   background-size: 960px auto;
   background-repeat: no-repeat;
 }
@@ -698,6 +698,7 @@ body {
 .main-navigation-list {
   list-style: none;
 }
+
 
 .services-product-list {
   margin: 0;
@@ -1001,3 +1002,259 @@ body {
   /* Временно для сетки */
   outline: 2px solid orange;
 }
+
+
+
+.catalog {
+    /* Временно для сетки */
+
+  min-width: 960px;
+
+  background-image: url("/img/technomart-catalog.jpg");
+  background-size: 960px auto;
+  background-repeat: no-repeat;
+}
+
+.main-header-bottom-flex.inner-page { 
+  margin-bottom: 0px;
+}
+
+.catalog-flex {
+  display: flex;
+  flex-wrap: wrap;
+  
+  /* Временно для сетки */
+  min-height: 368px;
+}
+
+.breadcrumbs-list {
+  width: 380px;
+  
+  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  /* Временно для сетки */
+  min-height: 59px;
+  outline: 2px solid orange;
+}
+
+.page-title {
+  width: 940px;
+  
+  margin: 0;
+  margin-bottom: 20px;
+  
+  /* Временно для сетки */
+  min-height: 89px;
+  outline: 2px solid orange;
+}
+
+.filter-catalog {
+  display: flex;
+  
+  width: 940px;
+  
+  margin-bottom: 52px;
+  
+  /* Временно для сетки */
+  min-height: 1050px;
+  outline: 2px solid orange;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  
+  width: 220px;
+  
+  margin-right: 20px;
+  /* Временно для сетки */
+  min-height: 746px;
+  outline: 2px solid orange;
+}
+
+.filter-caption {
+  width: 220px;
+  
+  margin: 0;
+  /* Временно для сетки */
+  min-height: 38px;
+  outline: 2px solid orange;
+}
+
+
+.filter {
+  width: 220px;
+  
+
+  /* Временно для сетки */
+  min-height: 708px;
+  outline: 2px solid orange;
+}
+
+.form-price,
+.checkbox,
+.radio-button {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.form-price {
+  width: 220px;
+
+  margin: 0;
+  padding: 0;
+  
+  /* Временно для сетки */
+  min-height: 207px;
+  outline: 2px solid orange;
+}
+
+.filter-option-checkbox-list {
+  width: 220px;
+  
+  list-style: none;
+  
+  margin: 0;
+  padding: 0;
+  
+  /* Временно для сетки */
+  min-height: 264px;
+  outline: 2px solid red;
+}
+
+.filter-option-radio_button-list {
+  width: 220px;
+  
+  list-style: none;
+  
+  margin: 0;
+  padding: 0;
+  
+  /* Временно для сетки */
+  min-height: 199px;
+  outline: 2px solid red;
+}
+
+.filter-button {
+  width: 140px;
+  
+  /* Временно для сетки */
+  min-height: 38px;
+  outline: 2px solid orange;
+}
+
+
+.catalog-and-sorting {
+  display: flex;
+  flex-wrap: wrap;
+  
+  width: 700px;
+  
+  /* Временно для сетки */
+  min-height: 1052px;
+  outline: 2px solid orange;
+}
+
+.sorting {
+  display: flex;
+  
+  width: 700px;
+  margin: 0;
+  padding: 0;
+  
+  margin-bottom: 0px;
+  
+  /* Временно для сетки */
+  min-height: 20px;
+  outline: 2px solid orange;
+}
+
+.sorting h2 {
+  width: 140px;
+  
+  margin: 0;
+  margin-right: 20px;
+  
+  /* Временно для сетки */
+  outline: 2px solid orange;
+}
+
+.sorting-list {
+  width: 540px;
+  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  /* Временно для сетки */
+  outline: 2px solid orange;
+}
+
+.product-list-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  
+  width: 700px;
+}
+
+.popular-product-catalog-item {
+  width: 220px;
+  
+  /* Временно для сетки */
+  height: 320px;
+  outline: 2px solid orange;
+}
+
+.pagination-list {
+  width: 300px;
+  
+  list-style: none;
+  margin: 0;
+  margin-left: 240px;
+  margin-bottom: 60px;
+  padding: 0;
+  
+  /* Временно для сетки */
+  min-height: 38px;
+  outline: 2px solid orange;
+}
+
+
+.service-info-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Временно для сетки */
+  outline: 2px solid orange;
+}
+
+.service-info-flex h2 {
+  width: 380px;
+  
+  margin: 0;
+  margin-top: 63px;
+  margin-bottom: 30px;
+  
+  /* Временно для сетки */
+  min-height: 33px;
+  outline: 2px solid orange;
+}
+
+.description-info {
+  
+  width: 940px;
+  margin-bottom: 73px;
+  /* Временно для сетки */
+  min-height: 62px;
+  outline: 2px solid orange;
+}
+
+
+

@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -8,8 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header"><!-- Этот блок будет задавать этот цвет http://prntscr.com/g9q5h4 -->
-      <div class="main-header-top"><!-- Этот блок будет задавать этот цвет http://prntscr.com/g9q603 -->
+    <header class="main-header">
+      <div class="main-header-top">
         <div class="container">
           <a class="main-header-logo" href="index.html">
             <img src="" width="" height="" alt="Логотип магазина Техномарт">
@@ -85,7 +86,7 @@
             <form class="filter" method="get" action="">
               <fieldset class="form-price">
                 <legend><b class="filter-caption filter-val">Цена:</b></legend>
-                  <!-- Как верстать этот блок покажут далее, если не покажут, то мы с тобой его разберем -->
+                  
                 <label for="val"></label>
                 <input id="val" type="range" name="val" min="0" max="30000" step="1">
                 <p>0 — 30000</p>
@@ -357,5 +358,173 @@
       <button class="close-button" type="button" value="">Закрыть</button>
     </section>
     
+  </body>
+</html>
+-->
+
+
+
+
+
+
+ 
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="catalog">
+    <header class="main-header">
+      <div class="main-header-top">
+        <div class="container main-header-top-flex">
+          <a class="main-header-logo"></a>
+          <form class="search"></form>
+          <a class="marker-header"></a>
+          <a class="global-panel-basket"></a>
+          <a class="button sales-button"></a>
+        </div>
+      </div>
+      
+      <div class="container main-header-bottom-flex inner-page">
+        <p class="description-header"></p>
+        <div class="phone-address">
+          <p class="phone-header"></p>
+          <p class="address-header"></p>
+        </div>  
+        <ul class="login-and-registry-list">
+          <li class="login-and-registry-item"></li>
+          <li class="login-and-registry-item"></li>
+        </ul>
+        <nav class="main-navigation">
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item"></li>
+            <li class="main-navigation-item"></li>
+            <li class="main-navigation-item"></li>
+            <li class="main-navigation-item"></li>
+            <li class="main-navigation-item"></li>
+            <li class="main-navigation-item"></li>
+            <li class="main-navigation-item"></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container catalog-flex">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item"></li>
+          <li class="breadcrumbs-item"></li>
+          <li class="breadcrumbs-item"></li>
+          <li class="breadcrumbs-item-current"></li>
+        </ul>
+        <h1 class="page-title"></h1>
+        <div class="filter-catalog">
+          <section class="filters">
+            <h2 class="filter-caption"></h2>
+              
+            <form class="filter">
+              <fieldset class="form-price"></fieldset>
+              <fieldset class="checkbox">
+                  <ul class="filter-option-checkbox-list">
+                    <li class="filter-option-item"></li>
+                    <li class="filter-option-item"></li>
+                    <li class="filter-option-item"></li>
+                    <li class="filter-option-item"></li>
+                    <li class="filter-option-item"></li>
+                  </ul>
+              </fieldset>
+              <fieldset class="radio-button">
+                <ul class="filter-option-radio_button-list">
+                  <li class="filter-option-item"></li>
+                  <li class="filter-option-item"></li>
+                </ul>
+              </fieldset>
+              <button class="filter-button"></button>
+            </form>
+          </section>
+          <div class="catalog-and-sorting">
+            <section class="sorting">
+              <h2></h2>
+              <ul class="sorting-list">
+                <li class="sorting-list-item"></li>
+                <li class="sorting-list-item"></li>
+                <li class="sorting-list-item"></li>
+                <li class="sorting-list-item"></li>
+                <li class="sorting-list-item"></li>
+              </ul>
+            </section>
+            
+            <section class="product-list-catalog">
+              <article class="popular-product-catalog-item"></article>
+              <article class="popular-product-catalog-item"></article>
+              <article class="popular-product-catalog-item"></article>
+              <article class="popular-product-catalog-item"></article>
+              <article class="popular-product-catalog-item"></article>
+              <article class="popular-product-catalog-item"></article>
+              <article class="popular-product-catalog-item"></article>
+              <article class="popular-product-catalog-item"></article>
+              <article class="popular-product-catalog-item"></article>
+            </section>  
+          </div>
+        </div>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"></li>
+          <li class="pagination-item"></li>
+          <li class="pagination-item"></li>
+          <li class="pagination-item"></li>
+        </ul>
+      </div>
+      
+      <section class="info">
+        <div class="container service-info-flex">
+          <h2></h2>
+          <div class="description-info"></div>
+        </div>
+      </section>
+    </main>    
+    <footer class="main-footer">
+      <div class="container flex-footer">
+        <a class="main-header-logo-footer"></a>
+        <ul class="site-navigation">
+          <li class="site-navigation-item"></li>
+          <li class="site-navigation-item"></li>
+          <li class="site-navigation-item"></li>
+          <li class="site-navigation-item"></li>
+          <li class="site-navigation-item"></li>
+        </ul>
+        <p class="contact-footer"></p>
+        <ul class="site-navigation-2">
+          <li class="site-navigation-2-item"></li>
+          <li class="site-navigation-2-item"></li>
+          <li class="site-navigation-2-item"></li>
+          <li class="site-navigation-2-item"></li>
+        </ul>
+      </div> 
+      <div class="main-footer-bottom">
+        <div class="container flex-footer-bottom">
+          <p class="copyrighted"></p>
+          <ul class="footer-social">
+            <li class="footer-social-item"></li>
+            <li class="footer-social-item"></li>
+            <li class="footer-social-item"></li>
+          </ul>
+          <p class="developed"></p>
+          <p class="developed"></p>
+        </div>
+      </div>
+    </footer>
+   
+  <!--   
+    <section class="modal-basked">
+      <h2 class="visually-hidden">Меню корзины</h2>
+      <p>Товар добавлен в корзину!</p>
+      <a href="" class="button">Оформить заказ</a>
+      <button class="continue-shopping" type="submit">Продолжить покупки</button>
+      <button class="close-button" type="button" value="">Закрыть</button>
+    </section>
+  -->  
   </body>
 </html>
