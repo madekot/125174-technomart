@@ -585,7 +585,7 @@ a {
 
   min-width: 960px;
 
-  background-image: url("img/technomart-index.jpg");
+  background-image: url("/img/technomart-index.jpg");
   background-size: 960px auto;
   background-repeat: no-repeat;
 }
@@ -1019,16 +1019,9 @@ a {
   margin-bottom: 0px;
 }
 
-.catalog-flex {
-  display: flex;
-  flex-wrap: wrap;
-  
-  /* Временно для сетки */
-  min-height: 368px;
-}
 
 .breadcrumbs-list {
-  width: 380px;
+  min-width: 380px;
   
   
   list-style: none;
@@ -1040,9 +1033,7 @@ a {
   outline: 2px solid orange;
 }
 
-.page-title {
-  width: 940px;
-  
+.page-title {  
   margin: 0;
   margin-bottom: 20px;
   
@@ -1053,44 +1044,23 @@ a {
 
 .filter-catalog {
   display: flex;
-  
-  width: 940px;
-  
   margin-bottom: 52px;
   
   /* Временно для сетки */
-  min-height: 1050px;
   outline: 2px solid orange;
 }
 
 .filters {
-  display: flex;
-  flex-direction: column;
-  
   width: 220px;
-  
   margin-right: 20px;
   /* Временно для сетки */
-  min-height: 746px;
   outline: 2px solid orange;
 }
 
-.filter-caption {
-  width: 220px;
-  
+.filter-caption {  
   margin: 0;
   /* Временно для сетки */
   min-height: 38px;
-  outline: 2px solid orange;
-}
-
-
-.filter {
-  width: 220px;
-  
-
-  /* Временно для сетки */
-  min-height: 708px;
   outline: 2px solid orange;
 }
 
@@ -1104,8 +1074,6 @@ a {
 
 
 .form-price {
-  width: 220px;
-
   margin: 0;
   padding: 0;
   
@@ -1114,9 +1082,7 @@ a {
   outline: 2px solid orange;
 }
 
-.filter-option-checkbox-list {
-  width: 220px;
-  
+.filter-option-checkbox-list {  
   list-style: none;
   
   margin: 0;
@@ -1128,8 +1094,6 @@ a {
 }
 
 .filter-option-radio_button-list {
-  width: 220px;
-  
   list-style: none;
   
   margin: 0;
@@ -1150,27 +1114,20 @@ a {
 
 
 .catalog-and-sorting {
-  display: flex;
-  flex-wrap: wrap;
   
   width: 700px;
   
   /* Временно для сетки */
-  min-height: 1052px;
   outline: 2px solid orange;
 }
 
 .sorting {
   display: flex;
   
-  width: 700px;
-  margin: 0;
-  padding: 0;
-  
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   
   /* Временно для сетки */
-  min-height: 20px;
+  min-height: 38px;
   outline: 2px solid orange;
 }
 
@@ -1200,21 +1157,22 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  
-  width: 700px;
 }
 
 .popular-product-catalog-item {
   width: 220px;
   
   /* Временно для сетки */
-  height: 320px;
+/*  margin-top: 20px;*/
+  min-height: 318px;
   outline: 2px solid orange;
 }
 
+.popular-product-catalog-item:nth-child(n+4) {
+  margin-top: 20px;
+}
+
 .pagination-list {
-  width: 300px;
-  
   list-style: none;
   margin: 0;
   margin-left: 240px;
@@ -1230,16 +1188,19 @@ a {
 .service-info-flex {
   display: flex;
   flex-wrap: wrap;
+  
+  padding-top: 63px;
+  padding-bottom: 73px;
 
   /* Временно для сетки */
   outline: 2px solid orange;
 }
 
 .service-info-flex h2 {
-  width: 380px;
+  min-width: 380px;
   
   margin: 0;
-  margin-top: 63px;
+
   margin-bottom: 30px;
   
   /* Временно для сетки */
@@ -1249,8 +1210,7 @@ a {
 
 .description-info {
   
-  width: 940px;
-  margin-bottom: 73px;
+  min-width: 940px;
   /* Временно для сетки */
   min-height: 62px;
   outline: 2px solid orange;
