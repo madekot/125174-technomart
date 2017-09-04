@@ -1,4 +1,4 @@
-<!--
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -11,7 +11,7 @@
   <body>
     <header class="main-header">
       <div class="main-header-top">
-        <div class="container">
+        <div class="container main-header-top-flex">
           <a class="main-header-logo">
             <img src="" width="110" height="18" alt="Логотип магазина Техномарт">
           </a>
@@ -19,7 +19,7 @@
             <label class="visually-hidden" for="search">Поиск:</label>
             <input type="search" name="search" id="search" value="" placeholder="Поиск:">
           </form>
-          <a href="marker.html">
+          <a class="marker-header" href="marker.html">
             Закладки:
             <span class="main-header-top-item-marker">0</span>
           </a>
@@ -30,40 +30,42 @@
           <a class="button sales-button" href="#">Оформить заказ</a>
         </div>
       </div>
-      <div class="container">
+      <div class="container main-header-bottom-flex">
         <p class="description-header">
           Интернет-магазин
           строительных материалов<br>
           и инструментов для ремонта
         </p>
-        <p class="phone-header">
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </p>
-        <p class="address-header">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </p>
+        <div class="phone-address">
+          <p class="phone-header">
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </p>
+          <p class="address-header">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
+        </div>
         <ul class="login-and-registry-list">
-          <li>
+          <li class="login-and-registry-item">
             <a href="">Войти</a>
           </li>
-          <li>
+          <li class="login-and-registry-item">
             <a href="">Регистрация</a>
           </li>
         </ul>
         <nav class="main-navigation">
          <ul class="main-navigation-list">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="contacts.html">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="Special.html">Спецпредложения</a></li>
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+            <li class="main-navigation-item"><a href="index.html">Главная</a></li>
+            <li class="main-navigation-item"><a href="contacts.html">Компания</a></li>
+            <li class="main-navigation-item"><a href="catalog.html">Каталог</a></li>
+            <li class="main-navigation-item"><a href="news.html">Новости</a></li>
+            <li class="main-navigation-item"><a href="Special.html">Спецпредложения</a></li>
+            <li class="main-navigation-item"><a href="delivery.html">Доставка</a></li>
+            <li class="main-navigation-item"><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
+    <main>  
       <h1 class="visually-hidden">Интернет-магазин инструментов и материалов Техномарт</h1>
       <div class="container">
         <section class="services-product">
@@ -127,6 +129,7 @@
             </li>
           </ul>
         </section>
+ 
         
         <section class="popular-product">
           <header class="popular-product-header">
@@ -185,49 +188,48 @@
             </article>
           </section>
         </section>
-         
         <section class="popular-brand">
           <header class="popular-brand-header">
             <h2>Популярные производители:</h2>
             <a href="catalog.html" class="button all-product">все производители</a>
           </header>
           <ul class="popular-brand-header-list">
-            <li>
+            <li class="popular-brand-header-item">
               <a href="#">
                 <img src="img/logo/logo-bosch.png" width="122" height="32" alt="bosh-логотип">
               </a>
             </li>
-            <li>
+            <li class="popular-brand-header-item">
               <a href="#">
                 <img src="img/logo/logo-Makita.png" width="123" height="40" alt="makita-логотип">
               </a>
             </li>
-            <li>
+            <li class="popular-brand-header-item">
               <a href="#">
                 <img src="img/logo/logo-DeWALT.png" width="146" height="44" alt="dewalt-логотип">
               </a>
             </li>
-            <li>
+            <li class="popular-brand-header-item">
               <a href="#">
                 <img src="img/logo/logo-Interskol.png" width="184" height="32" alt="интерскол-логотип">
               </a>
             </li>
-            <li>
+            <li class="popular-brand-header-item">
               <a href="#">
             <img src="img/logo/logo-hitachi.png" width="142" height="22" alt="hitachi-логотип">
                 </a>
             </li>
-            <li>
+            <li class="popular-brand-header-item">
               <a href="#">
                 <img src="img/logo/logo-LG.png" width="121" height="73" alt="lg-логотип">
               </a>
             </li>
-            <li>
+            <li class="popular-brand-header-item">
               <a href="#">
                 <img src="img/logo/logo-aeg.png" width="137" height="65" alt="aeg-логотип">
               </a>
             </li>
-            <li>
+            <li class="popular-brand-header-item">
               <a href="">
                 <img src="img/logo/logo-Metabo.png" width="155" height="55" alt="metabo-логотип">
               </a>
@@ -235,10 +237,9 @@
             </ul>
         </section>
       </div>
-       
       <section class="service">
         <h2 class="visually-hidden">Наши преимущества</h2> 
-        <div class="container">
+        <div class="container service-flex">
           <header class="service-header service-info">
             <h2>Сервисы</h2>
             <p>
@@ -312,44 +313,43 @@
         </section>
       </div>
     </main>
-
     <footer class="main-footer">
-      <div class="container">
-        <a class="main-header-logo">
+      <div class="container flex-footer">
+        <a class="main-header-logo-footer">
           <img src="" width="" height="" alt="Логотип магазина Техномарт">
         </a>
         <ul class="site-navigation">
-          <li><a href="contacts.html">Компания</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="site-navigation-item"><a href="contacts.html">Компания</a></li>
+          <li class="site-navigation-item"><a href="news.html">Новости</a></li>
+          <li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
+          <li class="site-navigation-item"><a href="delivery.html">Доставка</a></li>
+          <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
         </ul>
         <p>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55
         </p>
         <ul class="site-navigation-2">
-          <li><a href="">Материалы</a></li>
-          <li><a href="">Техника</a></li>
-          <li><a href="">Инструмент</a></li>
-          <li><a href="Special.html">Спецпредложения</a></li>
+          <li class="site-navigation-2-item"><a href="">Материалы</a></li>
+          <li class="site-navigation-2-item"><a href="">Техника</a></li>
+          <li class="site-navigation-2-item"><a href="">Инструмент</a></li>
+          <li class="site-navigation-2-item"><a href="Special.html">Спецпредложения</a></li>
         </ul>
       </div>
       <div class="main-footer-bottom">
-        <div class="container">
-          <p>
+        <div class="container flex-footer-bottom">
+          <p class="copyrighted">
             © 2010–2017 Компания «Техномарт»
             Все права защищены
           </p>
           <ul class="footer-social">
-              <li>
+              <li class="footer-social-item">
                 <a class="social-button" href="#">Вконтакте</a>
               </li>
-              <li>
+              <li class="footer-social-item">
                 <a class="social-button" href="#">Фейсбук</a>
               </li>
-              <li>
+              <li class="footer-social-item">
                 <a class="social-button" href="#">Инстаграм</a>
               </li>
             </ul>
@@ -364,7 +364,7 @@
         </div>
       </div>
     </footer>
-
+    
     <section class="modal">
       <h2 class="visually-hidden">Отзыв</h2>
       <form class="form" method="post" action="">
@@ -396,8 +396,8 @@
     </section>
   </body>
 </html>
--->
 
+<!--
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -459,7 +459,7 @@
 
         <section class="popular-product">
           <header class="popular-product-header">
-            <!--<h2 class="popular-product-item"></h2>потом переопределю класс что бы не конфликтовал-->
+            <h2 class="popular-product-item"></h2>
             <a class="button popular-product-all"></a>
           </header>
           <section class="product-list">
@@ -472,7 +472,7 @@
         
         <section class="popular-brand">
           <header class="popular-brand-header">
-            <!--<h2 class="popular-brand-header-item"></h2> потом переопределю класс что бы не конфликтовал-->
+            <h2 class="popular-brand-header-item"></h2>
             <a class="button all-product"></a>
           </header>
           <ul class="popular-brand-header-list">
@@ -535,5 +535,5 @@
         </div>
       </div>
     </footer>
-           
+    -->       
  
