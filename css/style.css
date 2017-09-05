@@ -1,6 +1,8 @@
 
 
 body {
+  box-sizing: border-box;
+  
   margin: 0;
   padding: 0;
 
@@ -8,10 +10,33 @@ body {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
+  
 }
 
 a {
   text-decoration: none; 
+}
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
@@ -85,6 +110,9 @@ a {
 
 .main-header {
   background-color: #f3f7f9;
+  padding-bottom: 60px;
+  margin-bottom: 59px;
+  
 }
 
 .main-header-top {
@@ -118,6 +146,8 @@ a {
 }
 
 .address-header {
+  margin: 0;
+  
   font-size: 14px;
   line-height: 24px;
   
@@ -215,6 +245,8 @@ a {
 
 .popular-product-header h2,
 .popular-brand-header h2 {
+  flex-grow: 1;
+  
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -644,9 +676,7 @@ a {
 .main-header-bottom-flex {
   display: flex;
   flex-wrap: wrap;
-  
-  margin-bottom: 59px;
-  
+  align-items: flex-start; 
 }
 
 .description-header {
@@ -687,15 +717,19 @@ a {
   width: 100%;
   margin-top: 36px;
   
-  
-  padding-bottom: 60px;
   /* Временно для сетки */
   min-height: 60px; 
   outline: 2px solid orange;
 }
 
 .main-navigation-list {
+  display: flex;
+  justify-content: space-around;
+  
   list-style: none;
+  
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -746,11 +780,12 @@ a {
 
 .punchers {
   width: 620px;
+  height: 266px;
   margin-top: 20px;
   margin-right: 20px;
+  overflow: hidden;
   
   /* Временно для сетки */
-  min-height: 266px; 
   outline: 2px solid orange;
 }
 
@@ -776,9 +811,10 @@ a {
 
 .popular-product-header {
   display: flex;
-    
-  margin-bottom: 20px;
+  align-items: center;
   
+  margin-bottom: 20px;
+  ;
   /* Временно для сетки */
   min-height: 89px; 
   outline: 2px solid orange;
@@ -786,6 +822,7 @@ a {
 
 .product-list {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 20px;
   justify-content: space-between;
   
@@ -805,6 +842,7 @@ a {
 .popular-brand-header {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   
   margin-bottom: 20px;
   
@@ -835,7 +873,7 @@ a {
 
 .popular-brand-header-item {
   width: 220px;
-  
+  display: flex;
   /* Временно для сетки */
   height: 145px;
   outline: 2px solid orange;
@@ -885,10 +923,9 @@ a {
   
   padding-top: 79px;
   padding-bottom: 86px; 
-  width: 940px;
   
   /* Временно для сетки */
-  min-height: 368px;
+
   outline: 2px solid orange;
 }
 
@@ -956,7 +993,7 @@ a {
   
   padding: 0;
   margin-top: 30px;
-  
+  margin-left: auto;
   /* Временно для сетки */
   min-height: 41px;
   outline: 2px solid orange;
@@ -964,6 +1001,7 @@ a {
 
 .flex-footer-bottom {
   display: flex;
+  padding-top: 34px;
 }
 
 .copyrighted {
@@ -971,7 +1009,6 @@ a {
   
   margin: 0;
   margin-right: 140px;
-  margin-top: 37px;
   
   /* Временно для сетки */
   min-height: 36px;
@@ -986,7 +1023,6 @@ a {
   padding: 0;
   
   margin-right: 81px;
-  margin-top: 34px;
   
   /* Временно для сетки */
   outline: 2px solid orange;
@@ -996,7 +1032,7 @@ a {
   width: 160px;
   
   margin: 0;
-  margin-top: 34px;
+
 
   /* Временно для сетки */
   outline: 2px solid orange;
@@ -1215,6 +1251,85 @@ a {
   outline: 2px solid orange;
 }
 
-.visually-hidden {
-  display: none;
+
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Код, который будет оживлять наш слайдер */
+#slide-1:checked ~ .services-slider .services-slide-1,
+#slide-2:checked ~ .services-slider .services-slide-2 {
+  display: block;
+}
+
+.services-slider {
+  position: relative;
+  height: 100%;
+}
+
+.services-slide {
+  position: relative;
+}
+
+.services-slide-descr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: 2px solid green;
+}
+
+.services-slide-descr h3 {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.service-slide-descr p {
+  margin: 0;
+}
+
+.button {
+  text-decoration: none;
+  color: #fff;
+  background: red;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.services-slider-control {
+  position: absolute;
+  bottom: 20px;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+  display: flex;
+}
+
+.services-slider-control label {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #fff;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.services-slider-control label:last-child {
+  margin-right: 0;
+}
+
+#slide-1:checked ~ .services-slider [for="slide-1"],
+#slide-2:checked ~ .services-slider [for="slide-2"] {
+  background: red;
 }
