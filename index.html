@@ -13,7 +13,7 @@
       <div class="main-header-top">
         <div class="container main-header-top-flex">
           <a class="main-header-logo">
-            <img src="" width="110" height="18" alt="Логотип магазина Техномарт">
+            Техномарт
           </a>
           <form class="search" method="post" action="">
             <label class="visually-hidden" for="search">Поиск:</label>
@@ -32,7 +32,7 @@
       </div>
       <div class="container main-header-bottom-flex">
         <p class="description-header">
-          Интернет-магазин
+          Интернет-магазин<br>
           строительных материалов<br>
           и инструментов для ремонта
         </p>
@@ -45,10 +45,10 @@
           </p>
         </div>
         <ul class="login-and-registry-list">
-          <li class="login-and-registry-item">
+          <li class="login-and-registry-item login">
             <a href="">Войти</a>
           </li>
-          <li class="login-and-registry-item">
+          <li class="login-and-registry-item registry">
             <a href="">Регистрация</a>
           </li>
         </ul>
@@ -73,23 +73,23 @@
           <ul class="services-product-list">
             <li class="services-product-item material">
               <p>
-                Материалы
+                <span class="services-product-item-btn">Материалы</span>
                 <a class="button services-product-button" href="">
-                  На любой вкус
+                  <span class="services-product-item">На любой вкус</span>
                 </a>
               </p>
             </li>
             <li class="services-product-item tool">
               <p>
-                Инструмент
+                <span class="services-product-item-btn">Инструмент</span>
                 <a class="button services-product-button" href="">
-                  На все случаи
+                  <span class="services-product-item">На все случаи</span>
                 </a>
               </p>
             </li>
             <li class="services-product-item technology">
               <p>
-                Техника
+                <span class="services-product-item-btn">Техника</span>
                 <a class="button services-product-button" href="">
                   Для стройки
                 </a>
@@ -118,9 +118,11 @@
                     <img src="img/slider/slide-2.jpg" width="620" height="266" alt="слайдер-2">
                   </div> 
                   <div class="services-slide-descr">
-                    <h3>Перфораторы 2</h3>
-                    <p>Настоящие мужские игрушки 2</p>
-                  </div>
+                    <div class="services-slider-text"> 
+                      <h3>Перфораторы 2</h3>
+                      <p>Настоящие мужские игрушки 2</p>
+                    </div>  
+                  </div>  
                   <a class="button services-product-button" href="">
                     Открыть каталог 2
                   </a>
@@ -132,14 +134,15 @@
               </div>
             </li>
             <li class="services-product-item discounts">
-              <p>Скидки 50%
+              <p>
+                <span class="services-product-item-btn">Скидки 50%</span>
                 <a class="button services-product-button" href="">
                 На 350 товаров</a>
               </p>
             </li>
             <li class="services-product-item delivery-services">
               <p>
-                 Доставка
+                <span class="services-product-item-btn">Доставка</span>
                 <a class="button services-product-button" href="">
                   бесплатно
                 </a>
@@ -256,49 +259,52 @@
         </section>
       </div>
       <section class="service">
-        <h2 class="visually-hidden">Наши преимущества</h2> 
+        <h2 class="visually-hidden">Наши преимущества</h2>  
         <div class="container service-flex">
-          <header class="service-header service-info">
-            <h2>Сервисы</h2>
-            <p>
-              Хороший интернет-магазин отличается от плохого не только ценами!
-              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-            </p>
-          </header>
-            <input class="visually-hidden" type="radio" name="services">
-            <input class="visually-hidden" type="radio" name="services">
-            <input class="visually-hidden" type="radio" name="services">
-          <p>Доставка</p>
-          <p>Гарантия</p>
-          <p>Кредит</p>
-          <section class="delivery service-descr">
-          <h2>Доставка</h2>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно!
-            </p>
-            <p>
-              Ведь мы неплохо заработаем,<br>
-              поднимая его на ваш этаж!
-            </p>
-        </section>
-          <section class="guarantee service-descr">
-          <h2>Гарантия</h2>
-          <p>
-             Если купленный у нас товар поломается или заискрит,<br> 
-             а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
-          </p>
-          <p>    
-             Дом уж восстановите как-нибудь сами.
-          </p>     
-        </section>
-          <section class="credit service-descr">
-          <h2>Кредит</h2>
-          <p>Залезть в долговую яму стало проще!</p> 
-          <p>Кредитные консультанты придут вам на помощь.</p>
-        </section>
+          <input type="radio" name="services" id="services-1" class="visually-hidden" checked>
+          <input type="radio" name="services" id="services-2" class="visually-hidden">
+          <input type="radio" name="services" id="services-3" class="visually-hidden">
+          <div class="container-control">
+            <label for="services-1">Доставка</label>
+            <label for="services-2">Гарантия</label>
+            <label for="services-3">Кредит</label>
+          </div>
+          <div class="container-slider">
+            <div class="slide slide-1">
+              <h2>Доставка</h2>
+              <div class="slide-desr">
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо
+                  к вашему подъезду совершенно бесплатно!
+                </p>
+                <p>
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!
+                </p>
+              </div>
+            </div>
+            <div class="slide slide-2">
+              <h2>Гарантия</h2>
+              <div class="slide-desr">
+                <p>
+                  Если купленный у нас товар поломается или заискрит,<br> 
+                  а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                </p>
+                <p>    
+                  Дом уж восстановите как-нибудь сами.
+                </p>     
+              </div>
+            </div>
+            <div class="slide slide-3">
+              <h2>Кредит</h2>
+              <div class="slide-desr">
+                <p>Залезть в долговую яму стало проще!</p> 
+                <p>Кредитные консультанты придут вам на помощь.</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </section> 
           
       <div class="description container" >
         <section class="about-company service-info">
@@ -414,144 +420,3 @@
     </section>
   </body>
 </html>
-
-<!--
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="main-body">
-    
-    <header class="main-header">
-      <div class="main-header-top">
-        <div class="container main-header-top-flex">
-          <a class="main-header-logo"></a>
-          <form class="search"></form>
-          <a class="marker-header"></a>
-          <a class="global-panel-basket"></a>
-          <a class="button sales-button"></a>
-        </div>
-      </div>
-    
-      <div class="container main-header-bottom-flex">
-        <p class="description-header"></p>
-        <div class="phone-address">
-          <p class="phone-header"></p>
-          <p class="address-header"></p>
-        </div>  
-        <ul class="login-and-registry-list">
-          <li class="login-and-registry-item"></li>
-          <li class="login-and-registry-item"></li>
-        </ul>
-        <nav class="main-navigation">
-         <ul class="main-navigation-list">
-            <li class="main-navigation-item"></li>
-            <li class="main-navigation-item"></li>
-            <li class="main-navigation-item"></li>
-            <li class="main-navigation-item"></li>
-            <li class="main-navigation-item"></li>
-            <li class="main-navigation-item"></li>
-            <li class="main-navigation-item"></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
- 
-    <main>
-      <div class="container">
-        <section class="services-product">
-          <ul class="services-product-list">
-            <li class="services-product-item material"></li>
-            <li class="services-product-item tool"></li>
-            <li class="services-product-item technology"></li>
-            <li class="services-product-item punchers"></li>
-            <li class="services-product-item discounts"></li>
-            <li class="services-product-item delivery-services"></li>
-          </ul>
-        </section>
-
-        <section class="popular-product">
-          <header class="popular-product-header">
-            <h2 class="popular-product-item"></h2>
-            <a class="button popular-product-all"></a>
-          </header>
-          <section class="product-list">
-            <article class="popular-product-item"></article>
-            <article class="popular-product-item"></article>
-            <article class="popular-product-item"></article>
-            <article class="popular-product-item"></article>
-          </section>
-        </section>
-        
-        <section class="popular-brand">
-          <header class="popular-brand-header">
-            <h2 class="popular-brand-header-item"></h2>
-            <a class="button all-product"></a>
-          </header>
-          <ul class="popular-brand-header-list">
-            <li class="popular-brand-header-item"></li>
-            <li class="popular-brand-header-item"></li>
-            <li class="popular-brand-header-item"></li>
-            <li class="popular-brand-header-item"></li>
-            <li class="popular-brand-header-item"></li>
-            <li class="popular-brand-header-item"></li>
-            <li class="popular-brand-header-item"></li>
-            <li class="popular-brand-header-item"></li>
-          </ul>
-        </section>
-      </div>
-         
-      <section class="service">
-        <div class="container service-flex">
-          <header class="service-header service-info"></header>
-          <section class="delivery service-descr"></section>
-          <section class="guarantee service-descr"></section>
-          <section class="credit service-descr"></section>
-        </div>
-      </section>
-        
-      <div class="description container">
-        <section class="about-company service-info"></section>  
-        <section class="contact service-info"></section>
-      </div>
-    </main>
-  
-    
-    <footer class="main-footer">
-      <div class="container flex-footer">
-        <a class="main-header-logo-footer"></a>
-        <ul class="site-navigation">
-          <li class="site-navigation-item"></li>
-          <li class="site-navigation-item"></li>
-          <li class="site-navigation-item"></li>
-          <li class="site-navigation-item"></li>
-          <li class="site-navigation-item"></li>
-        </ul>
-        <p class="contact-footer"></p>
-        <ul class="site-navigation-2">
-          <li class="site-navigation-2-item"></li>
-          <li class="site-navigation-2-item"></li>
-          <li class="site-navigation-2-item"></li>
-          <li class="site-navigation-2-item"></li>
-        </ul>
-      </div> 
-      <div class="main-footer-bottom">
-        <div class="container flex-footer-bottom">
-          <p class="copyrighted"></p>
-          <ul class="footer-social">
-            <li class="footer-social-item"></li>
-            <li class="footer-social-item"></li>
-            <li class="footer-social-item"></li>
-          </ul>
-          <p class="developed"></p>
-          <p class="developed"></p>
-        </div>
-      </div>
-    </footer>
-    -->       
- 
