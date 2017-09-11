@@ -735,9 +735,11 @@ border-bottom-color: #63a63e;
 
 
 
-.service {
+.service-flex {
   background-color: #f4f8fa;
   min-height: 520px;
+  
+
 }
 
 .service-header .title {
@@ -749,6 +751,7 @@ border-bottom-color: #63a63e;
   color: #000000;
   
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .container-slider .title {
@@ -776,6 +779,9 @@ border-bottom-color: #63a63e;
   line-height: 24px;
   text-transform: uppercase;
   
+  margin: 0;
+  margin-bottom: 30px;
+  
   color: #000000;
 }
 
@@ -788,11 +794,24 @@ border-bottom-color: #63a63e;
 }
 
 .service-info p {
+  
   font-family: "PT Sans", Arial sans-serif;
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 25px;
   
   color: #000000;
+}
+
+.contact p {
+  width: 180px;
+  margin-bottom: 30px;
+}
+
+.contact .map-contact {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .delivery-brand {
@@ -802,6 +821,13 @@ border-bottom-color: #63a63e;
   line-height: 20px;
   
   color: #000000;
+  
+  margin: 0;
+  padding: 0;
+}
+
+.delivery-brand li {
+  margin-bottom: 20px;
 }
 
 .user {
@@ -1030,14 +1056,17 @@ border-bottom-color: #63a63e;
 .site-navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 560px;
+  margin-bottom: 35px;
+/*  align-items: center;*/
+  width: 550px;
 
   list-style: none;
 
   margin: 0;
   margin-left: auto;
+  margin-bottom: 30px;
   padding: 0;
+  padding-top: 40px;
 
   /* Временно для сетки */
 /*    outline: 2px solid orange;*/
@@ -1049,19 +1078,19 @@ border-bottom-color: #63a63e;
 
 .site-navigation-2 {
   display: flex;
-  align-items: center;
+/*  align-items: center;*/
   justify-content: space-between;
-  width: 560px;
+  width: 550px;
 
   list-style: none;
 
   margin: 0;
   padding: 0;
-  
-  margin-top: 30px;
+  padding-left: 25px;
+/*  margin-top: 30px;*/
   margin-left: auto;
   /* Временно для сетки */
-  min-height: 41px;
+/*  min-height: 41px;*/
 /*    outline: 2px solid orange;*/
 }
 
@@ -1469,7 +1498,7 @@ border-bottom-color: #63a63e;
   flex-direction: column;
   
   padding-top: 65px;
-  padding-bottom: 102px;
+/*  padding-bottom: 102px;*/
     
   
   /* Временно для сетки */
@@ -1501,12 +1530,18 @@ border-bottom-color: #63a63e;
 .description {
   display: flex;
   
-  padding-top: 79px;
+  padding-top: 80px;
   padding-bottom: 86px; 
   
   /* Временно для сетки */
 
 /*  outline: 2px solid orange;*/
+}
+
+.about-company .button {
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 5px;
 }
 
 .about-company {
@@ -1519,25 +1554,51 @@ border-bottom-color: #63a63e;
 }
 
 .contact {
-  width: 380px;
+/*  width: 380px;*/
   
   /* Временно для сетки */
 /*  outline: 2px solid orange;*/
 }
 
+.contact .button {
+  display: block;
+  
+  padding: 10px 0;
+  border-radius: 5px;
+  
+  
+}
+
 .flex-footer {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
   
   padding-bottom: 52px;
+  min-height: 192px;
+}
+
+.flex-footer p {
+  margin: 0;
+  padding: 0;
+  
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .main-header-logo-footer {
   width: 220px;
   
   /* Временно для сетки */
-  min-height: 68px;
+
 /*  outline: 2px solid orange;*/
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  background: #ee3643;
+  text-transform: uppercase;
+  padding: 16px 0;
 }
 
 
@@ -1558,6 +1619,7 @@ border-bottom-color: #63a63e;
  .flex-footer-bottom {
   display: flex;
   padding-top: 34px;
+  padding-bottom: 30px;
 }
 
 .copyrighted {
@@ -1566,23 +1628,50 @@ border-bottom-color: #63a63e;
   margin: 0;
   margin-right: 140px;
   
+  font-size: 16px;
   /* Временно для сетки */
   min-height: 36px;
 /*  outline: 2px solid orange;*/
 }
 
 .footer-social {
+  display: flex;
   width: 160px;
   
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 10px;
   
   margin-right: 81px;
   
   /* Временно для сетки */
 /*  outline: 2px solid orange;*/
 }
+
+.footer-social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  
+  
+  background-color: #212a3a;
+  border-radius: 50%;
+}
+
+
+
+.footer-social-item:hover,
+.footer-social-item:focus, 
+.footer-social-item:active {
+  background-color: #ee3643;
+}
+
+
 
 .developed {
   width: 160px;
@@ -1833,7 +1922,7 @@ border-bottom-color: #63a63e;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  outline: 2px solid green;
+/*  outline: 2px solid green;*/
 }
 
 .services-slide-descr h3 {
@@ -1915,7 +2004,7 @@ border-bottom-color: #63a63e;
 }
 
 .container-slider {
-/*  flex-grow: 1;*/
+  flex-grow: 1;
 /*  margin-left: 30px;*/
   width: 340px;
 }
@@ -1934,3 +2023,35 @@ border-bottom-color: #63a63e;
   display: none;
 }
 
+
+.container-slider .slide-1 {
+  min-height: 280px;
+  padding-right: 370px;
+  
+  background-image: url("/img/service/delivery.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.container-slider .slide-2 {
+  padding-right: 280px;
+  height: 280px;
+  
+  background-image: url("/img/service/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+
+.container-slider .slide-3 {
+  padding-right: 340px;
+  height: 280px;
+
+  background-image: url("/img/service/credit.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.service {
+  background-color: #f4f8f9;
+}
